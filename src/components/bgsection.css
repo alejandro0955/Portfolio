@@ -1,0 +1,9 @@
+#BgSection {
+  background-image: url(./background.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 105%;
+  width: 100vw;
+  background-size: cover;
+}

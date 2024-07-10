@@ -1,0 +1,10 @@
+#article {
+  background-color: rgb(16, 16, 16);
+  width: 50vw;
+  margin: auto;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  text-align: left;
+  padding: 15px;
+}

@@ -1,0 +1,26 @@
+#NavBar {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  width: 25vw;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: black;
+}
+
+button {
+  background-color: rgba(229, 229, 229, 0.6);
+  color: rgb(95, 93, 93);
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.7em;
+  border-width: 1px;
+  width: 21%;
+  border: 0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: black;
+}
