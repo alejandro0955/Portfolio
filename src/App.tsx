@@ -1,6 +1,5 @@
 import "./App.css";
 import Article from "./components/article";
-// import BgSection from "./components/bgsection";
 import NavBar from "./components/navbar";
 
 function App() {
