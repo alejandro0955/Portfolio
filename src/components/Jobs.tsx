@@ -47,9 +47,11 @@ function Jobs(props: Props) {
         </div>
       </div>
       <div className="job-spacer-space">
-        <div className="job-spacer-space-space">
+        <div className="job-spacer-left"></div>
+        <div className="job-spacer-line">
           {props.last_job === true ? null : <div className="job-spacer"></div>}
         </div>
+        <div className="job-spacer-right"></div>
       </div>
     </>
   );

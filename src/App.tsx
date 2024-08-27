@@ -28,10 +28,7 @@ function App() {
         <a className="resume"></a>
       </nav>
       <div className="imgOverlay">
-        <img
-          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ab77ebf-9250-4817-8d61-d8bd75f233de/d551312-cdbc5768-2705-4286-ab71-7b36b667bf6e.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8yYWI3N2ViZi05MjUwLTQ4MTctOGQ2MS1kOGJkNzVmMjMzZGUvZDU1MTMxMi1jZGJjNTc2OC0yNzA1LTQyODYtYWI3MS03YjM2YjY2N2JmNmUuZ2lmIn1dXX0.w-X4i8dT2KyEZ8tqWmOQRZf3_AAdwN_FEHGzxu9S5Po"
-          id="blackhole"
-        ></img>
+        <img src="src/assets/bg.jpg" id="blackhole"></img>
         <div className="name">
           <div className="tt">
             <h1>Alejandro Salza</h1>
@@ -47,14 +44,14 @@ function App() {
           <SectionHeader header="Expertise" />
           <CategorySlider options={["Stack", "Certifications"]} />
           <div className="skillContainer">
-            <Skill url={"src/assets/python.png"} />
-            <Skill url={"src/assets/react.png"} />
-            <Skill url={"src/assets/javascript.png"} />
-            <Skill url={"src/assets/html.png"} />
-            <Skill url={"src/assets/css.png"} />
-            <Skill url={"src/assets/git.png"} />
-            <Skill url={"src/assets/github.png"} />
-            <Skill url={"src/assets/vscode.png"} />
+            <Skill url={"src/assets/python.svg"} />
+            <Skill url={"src/assets/react.svg"} />
+            <Skill url={"src/assets/javascript.svg"} />
+            <Skill url={"src/assets/html5.svg"} />
+            <Skill url={"src/assets/css.svg"} />
+            <Skill url={"src/assets/git.svg"} />
+            <Skill url={"src/assets/github-light.svg"} />
+            <Skill url={"src/assets/vscode.svg"} />
           </div>
         </div>
         <div className="sect">
@@ -75,9 +72,9 @@ function App() {
             logo={"src/assets/job.png"}
             company="Summer Youth Internship Program"
             description={
-              "Tested some softwareTested some softwareTested some softwareTested some software"
+              "Extensively tested an AI platoform for mental health to find bugs and glitches."
             }
-            tools={["React", "Java", "Python"]}
+            tools={[]}
             last_job={false}
           />
           <Jobs
@@ -85,8 +82,10 @@ function App() {
             duration="June 2022 - Aug 20222"
             logo={"src/assets/job.png"}
             company="Jackson Memorial Hospital"
-            description={"none"}
-            tools={["none"]}
+            description={
+              "Worked in a team to develop a ptyhon solution that allowed a hospital to calcuate the cash flow that came into the hospital"
+            }
+            tools={["Python", "Javascript", "HTML", "CSS", "SQL"]}
             last_job={true}
           />
         </div>

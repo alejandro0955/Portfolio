@@ -42,6 +42,5 @@
 .circle > img {
   margin: auto;
   width: 50%;
-  height: auto;
-  padding: 5px;
+  aspect-ratio: 1;
 }
