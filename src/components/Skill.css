@@ -1,0 +1,47 @@
+.circle {
+  display: flex;
+  height: 5vw;
+  width: 5vw;
+  background-color: aqua;
+  border-radius: 2.5vw;
+  margin: 10px;
+  background: rgb(33, 33, 33);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(23, 23, 23, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(23, 23, 23, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(23, 23, 23, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#212121",endColorstr="#171717",GradientType=1);
+  transition: all 0.5s;
+}
+
+@media (max-width: 600px) {
+  .circle {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 20vw;
+  }
+}
+
+.circle:hover {
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.39);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.39);
+  box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.39);
+}
+
+.circle > img {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  padding: 5px;
+}

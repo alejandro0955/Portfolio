@@ -1,0 +1,225 @@
+:root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #090b08;
+}
+
+.navbar {
+  display: grid;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 14vh;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    visibility: hidden;
+  }
+}
+
+.navbar > ul {
+  color: white;
+  font-family: Poppins;
+  background-color: rgb(44, 44, 44, 0.69);
+  border-radius: 40px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  margin: 20px;
+  font-size: 0.8vw;
+  justify-self: center;
+  align-self: center;
+  height: fit-content;
+}
+
+.menuItem {
+  display: inline;
+  padding: 15px;
+  border-radius: 40px;
+}
+
+.menuItem:hover {
+  background-color: gray;
+  transition: all 0.5s;
+}
+
+.midContainer {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-family: Poppins;
+}
+
+@media (max-width: 600px) {
+  .midContainer {
+    width: 90%;
+  }
+}
+
+h1,
+h3,
+p,
+input {
+  margin: 0;
+}
+
+.imgOverlay {
+  background: rgb(0, 0, 1);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 0, 1, 0) 0%,
+    rgba(9, 11, 8, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 0, 1, 0) 0%,
+    rgba(9, 11, 8, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 1, 0) 0%,
+    rgba(9, 11, 8, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=".000001",endColorstr=".090b08",GradientType=1);
+  width: 100%;
+  height: 110vh;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#blackhole {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 110vh;
+  z-index: inherit;
+}
+
+@media (max-width: 600px) {
+  #blackhole {
+    width: 100%;
+    height: auto;
+    padding-top: 50%;
+  }
+}
+
+.name {
+  width: 50%;
+  margin: auto;
+  background-size: contain;
+  background-repeat: round;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .name {
+    width: 100%;
+    padding-top: 50%;
+  }
+}
+
+.tt {
+  margin-top: 10%;
+  text-align: center;
+  color: white;
+  font-family: Poppins;
+}
+
+.tt > h1 {
+  font-size: 10vw;
+}
+
+.tt > h3 {
+  font-size: 1vw;
+}
+
+@media (max-width: 600px) {
+  .tt > h3 {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .tt > h1 {
+    font-size: 17vw;
+  }
+}
+
+.downButton {
+  display: flex;
+  margin: auto;
+  width: 2vw;
+  margin: 5%;
+  animation-name: upndown;
+  animation-duration: 2s;
+  transition: all 0.5s;
+  animation-iteration-count: infinite;
+  /* animation-timing-function: ease-in-out; */
+}
+
+.downButton > img {
+  width: inherit;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .downButton {
+    width: 10vw;
+  }
+}
+
+@keyframes upndown {
+  0% {
+    transform: translate(0px, -5px);
+  }
+  25% {
+    transform: translate(0px, -10px);
+  }
+  /* 75% {
+    transform: translate(0px, 5px);
+  }
+  100% {
+    transform: translate(0px, 10px);
+  } */
+}
+
+.downButton > img:hover {
+}
+
+.sect {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 25vw;
+}
+
+@media (max-width: 600px) {
+  .skillContainer {
+    width: 80vw;
+  }
+}

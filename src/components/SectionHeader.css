@@ -1,0 +1,11 @@
+.section-header {
+  text-align: left;
+  align-self: flex-start;
+  font-size: 2.5vw;
+}
+
+@media (max-width: 600px) {
+  .section-header {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,83 @@
+.contact-form {
+  background-color: gray;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  background: rgb(33, 33, 33);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(23, 23, 23, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(23, 23, 23, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(23, 23, 23, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#212121",endColorstr="#171717",GradientType=1);
+}
+
+.email-form {
+  width: 100%;
+  margin: 5%;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.message-form {
+  width: 100%;
+  margin: 5%;
+  height: 10vw;
+  background-color: black;
+  color: white;
+  border: 0;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.message-form,
+.email-form:checked {
+  border: 0;
+}
+
+.send-button-container {
+  width: 80%;
+  display: flex;
+  justify-items: right;
+}
+
+.send-button {
+  background: rgb(0, 185, 255);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 185, 255, 1) 0%,
+    rgba(230, 0, 250, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 185, 255, 1) 0%,
+    rgba(230, 0, 250, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 185, 255, 1) 0%,
+    rgba(230, 0, 250, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b9ff",endColorstr="#e600fa",GradientType=1);
+  color: white;
+  border: 0;
+  font-size: 1vw;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5%;
+}

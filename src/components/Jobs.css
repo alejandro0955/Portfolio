@@ -1,0 +1,95 @@
+.job-container {
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 15vh;
+  width: 70%;
+}
+
+.job-date {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* margin: 5%; */
+  font-size: 0.6vw;
+}
+
+.job-spacer-logo-container {
+  width: 10%;
+  height: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.line-spacer {
+  height: 33.33%;
+  aspect-ratio: 1;
+  margin: auto;
+}
+
+.job-spacer {
+  width: 0.1vh;
+  background-color: white;
+  height: 100%;
+  margin: auto;
+}
+
+.job-logo {
+  height: 33.3%;
+  aspect-ratio: 1;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 500px;
+}
+
+#job-logo {
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+
+.job-information {
+  width: 100%;
+  height: 30%;
+  text-align: left;
+}
+
+.job-information > p {
+  font-size: 0.7vw;
+}
+
+.job-description > h3 {
+  text-align: left;
+}
+
+.job-description {
+  text-align: left;
+  width: 100%;
+  height: 70%;
+}
+
+.tab {
+  margin: 0;
+  margin-right: 5px;
+}
+
+.job-spacer-space {
+  width: 70%;
+}
+
+.job-spacer-space-space {
+  height: 15vh;
+  margin-right: 50%;
+}
+
+#ws {
+  width: 70%;
+  height: 100%;
+  background-color: #181818;
+  border-radius: 15px;
+}
