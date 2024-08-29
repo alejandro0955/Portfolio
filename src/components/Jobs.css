@@ -6,6 +6,7 @@
   flex-direction: column;
   height: 15vh;
   width: 70%;
+  vertical-align: middle;
 }
 
 .job-date {
@@ -60,27 +61,37 @@
 }
 
 .job-information > p {
-  font-size: 60%;
+  font-size: 100%;
   width: 100%;
 }
 
 .job-information > h3 {
   text-align: left;
-  font-size: 1.2vw;
+  font-size: 150%;
 }
 
 .job-description {
   text-align: left;
   width: 100%;
   display: flex;
-  height: 70%;
+  height: 60%;
   flex-wrap: wrap;
 }
 
 .job-description > p {
-  font-size: 60%;
+  font-size: 100%;
   margin-top: 15px;
   width: 100%;
+  overflow: hidden;
+}
+
+.tool-container {
+  display: flex;
+  height: 10%;
+}
+
+#job-tools {
+  font-size: 1em;
 }
 
 .tab {
@@ -118,4 +129,5 @@
   flex-wrap: wrap;
   flex-direction: row;
   padding: 3%;
+  overflow: hidden;
 }

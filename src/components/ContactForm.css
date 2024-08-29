@@ -1,0 +1,48 @@
+.contact-section {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  height: 25vh;
+  margin: 10% 0%;
+}
+
+.social-media {
+  width: 5%;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 20px;
+  margin: 10px;
+  height: 90%;
+  padding: 15px;
+}
+
+.social-tab {
+  width: 90%;
+  aspect-ratio: 1;
+  margin: auto;
+  display: flex;
+  border-radius: 20%;
+  transition: all 0.5s;
+}
+
+.social-tab:hover {
+  background-color: gray;
+}
+
+.social-media-logo {
+  width: 80%;
+  margin: auto;
+  height: auto;
+}
+
+.map-container {
+  padding: 15px;
+  margin: 10px;
+  height: 90%;
+  background-color: #181818;
+  width: 50%;
+  border-radius: 20px;
+}

@@ -50,7 +50,7 @@ function App() {
             <Skill url={"src/assets/html5.svg"} />
             <Skill url={"src/assets/css.svg"} />
             <Skill url={"src/assets/git.svg"} />
-            <Skill url={"src/assets/github-light.svg"} />
+            <Skill url={"src/assets/github-dark.svg"} />
             <Skill url={"src/assets/vscode.svg"} />
           </div>
         </div>
@@ -68,7 +68,7 @@ function App() {
           <CategorySlider options={["Jobs", "Awards"]} />
           <Jobs
             name={"Software Testing Intern"}
-            duration="June 2022 - Aug 20222"
+            duration="June 2022 - Aug 2022"
             logo={"src/assets/job.png"}
             company="Summer Youth Internship Program"
             description={
@@ -79,8 +79,8 @@ function App() {
           />
           <Jobs
             name={"Data Science Intern"}
-            duration="June 2022 - Aug 20222"
-            logo={"src/assets/job.png"}
+            duration="June 2022 - Aug 2022"
+            logo={"src/assets/JHS.svg"}
             company="Jackson Memorial Hospital"
             description={
               "Worked in a team to develop a ptyhon solution that allowed a hospital to calcuate the cash flow that came into the hospital"

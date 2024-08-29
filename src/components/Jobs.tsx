@@ -40,9 +40,14 @@ function Jobs(props: Props) {
           </div>
           <div className="job-description">
             <p>{props.description}</p>
-            {props.tools.map((tool) => (
-              <div className="tab">{tool}</div>
-            ))}
+
+            <div className="tool-container">
+              {props.tools.map((tool) => (
+                <div className="tab" id="job-tools">
+                  {tool}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
