@@ -15,7 +15,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(24, 24, 24, 1) 95%
     ),
-    url("/src/assets/Project1.png");
+    url("/src/assets/public/Project1.png");
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#181818", GradientType=1);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000001",endColorstr="#090b08",GradientType=1);
   width: 70%;

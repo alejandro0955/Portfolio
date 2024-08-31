@@ -168,11 +168,10 @@ input {
   margin: auto;
   width: 2vw;
   margin: 5%;
-  animation-name: upndown;
-  animation-duration: 2s;
+  position: relative;
+  animation: upndown 2s linear infinite;
+  animation-timing-function: ease;
   transition: all 0.5s;
-  animation-iteration-count: infinite;
-  /* animation-timing-function: ease-in-out; */
 }
 
 .downButton > img {
@@ -188,20 +187,14 @@ input {
 
 @keyframes upndown {
   0% {
-    transform: translate(0px, -5px);
+    transform: translate(0px, 0px);
   }
-  25% {
-    transform: translate(0px, -10px);
-  }
-  /* 75% {
-    transform: translate(0px, 5px);
+  50% {
+    transform: translate(0px, 20px);
   }
   100% {
-    transform: translate(0px, 10px);
-  } */
-}
-
-.downButton > img:hover {
+    transform: translate(0px, 0px);
+  }
 }
 
 .sect {

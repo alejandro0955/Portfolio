@@ -6,35 +6,13 @@ function ContactForm() {
   return (
     <>
       <div className="contact-section">
-        <div className="social-media">
-          <div className="social-tab">
-            <img
-              className="social-media-logo"
-              src="src/assets/instagram_dark.svg"
-            ></img>
-          </div>
-          <div className="social-tab">
-            <img
-              className="social-media-logo"
-              src="src/assets/linkedin.svg"
-            ></img>
-          </div>
-          <div className="social-tab">
-            <img className="social-media-logo" src="src/assets/gmail.svg"></img>
-          </div>
-          <div className="social-tab">
-            <img
-              className="social-media-logo"
-              src="src/assets/github-dark.svg"
-            ></img>
-          </div>
-        </div>
         <div className="map-container">
+          <h3>Find me at</h3>
           <MapContainer
             center={[25.793449, -80.139198]}
             zoom={13}
             scrollWheelZoom={false}
-            style={{ height: "100%", borderRadius: "15px" }}
+            style={{ height: "88%", borderRadius: "15px" }}
             zoomControl={false}
             attributionControl={false}
           >
@@ -44,6 +22,39 @@ function ContactForm() {
               detectRetina={true}
             />
           </MapContainer>
+        </div>
+        <div className="social-media">
+          <h3>My socials</h3>
+          <div className="social-tab-container">
+            <div className="social-tab">
+              <img
+                className="social-media-logo"
+                src="src/assets/public/instagram_dark.svg"
+              ></img>
+            </div>
+            <div className="social-tab">
+              <img
+                className="social-media-logo"
+                src="src/assets/public/linkedin.svg"
+              ></img>
+            </div>
+            <div className="social-tab">
+              <img
+                className="social-media-logo"
+                src="src/assets/public/gmail.svg"
+              ></img>
+            </div>
+            <div className="social-tab">
+              <img
+                className="social-media-logo"
+                src="src/assets/public/github-dark.svg"
+              ></img>
+            </div>
+          </div>
+        </div>
+        <div className="resume-container">
+          <h3>My resume</h3>
+          <button className="resume-button">Download</button>
         </div>
       </div>
     </>
