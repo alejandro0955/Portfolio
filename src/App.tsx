@@ -28,14 +28,14 @@ function App() {
         <a className="resume"></a>
       </nav>
       <div className="imgOverlay">
-        <img src="src/assets/public/bg.jpg" id="blackhole"></img>
+        <img src="/bg.jpg" id="blackhole"></img>
         <div className="name">
           <div className="tt">
             <h1>Alejandro Salza</h1>
             <h3>Aspiring Software Engineer and Frontend Developer</h3>
           </div>
           <a className="downButton">
-            <img src="src/assets/public/Button.png"></img>
+            <img src="/Button.png"></img>
           </a>
         </div>
       </div>
@@ -44,14 +44,14 @@ function App() {
           <SectionHeader header="Expertise" />
           <CategorySlider options={["Stack", "Certifications"]} />
           <div className="skillContainer">
-            <Skill url={"src/assets/public/python.svg"} />
-            <Skill url={"src/assets/public/react.svg"} />
-            <Skill url={"src/assets/public/javascript.svg"} />
-            <Skill url={"src/assets/public/html5.svg"} />
-            <Skill url={"src/assets/public/css.svg"} />
-            <Skill url={"src/assets/public/git.svg"} />
-            <Skill url={"src/assets/public/github-dark.svg"} />
-            <Skill url={"src/assets/public/vscode.svg"} />
+            <Skill url={"/python.svg"} />
+            <Skill url={"/react.svg"} />
+            <Skill url={"/javascript.svg"} />
+            <Skill url={"/html5.svg"} />
+            <Skill url={"/css.svg"} />
+            <Skill url={"/git.svg"} />
+            <Skill url={"/github-dark.svg"} />
+            <Skill url={"/vscode.svg"} />
             {/* <Skill url={"src/assets/public/javascript.svg"} />
             <Skill url={"src/assets/public/excel.svg"}></Skill>
             <Skill url={"src/assets/public/powerpoint.svg"}></Skill> */}
@@ -72,7 +72,7 @@ function App() {
           <Jobs
             name={"Software Testing Intern"}
             duration="June 2022 - Aug 2022"
-            logo={"src/assets/public/job.png"}
+            logo={"/job.png"}
             company="Summer Youth Internship Program"
             description={
               "Extensively tested an AI platoform for mental health to find bugs and glitches."
@@ -83,7 +83,7 @@ function App() {
           <Jobs
             name={"Data Science Intern"}
             duration="June 2022 - Aug 2022"
-            logo={"src/assets/public/JHS.svg"}
+            logo={"/JHS.svg"}
             company="Jackson Memorial Hospital"
             description={
               "Worked in a team to develop a ptyhon solution that allowed a hospital to calcuate the cash flow that came into the hospital"

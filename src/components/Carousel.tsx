@@ -16,10 +16,10 @@ function Carousel(props: Props) {
         <div className="arrow-container">
           <div className="arrows">
             <a className="arrow" id="arrow1">
-              <img src="src/assets/public/arrow-left.png"></img>
+              <img src="/arrow-left.png"></img>
             </a>
             <a className="arrow" id="arrow2">
-              <img src="src/assets/public/arrow-right.png"></img>
+              <img src="/arrow-right.png"></img>
             </a>
           </div>
         </div>

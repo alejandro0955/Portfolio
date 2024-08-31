@@ -29,26 +29,17 @@ function ContactForm() {
             <div className="social-tab">
               <img
                 className="social-media-logo"
-                src="src/assets/public/instagram_dark.svg"
+                src="/instagram_dark.svg"
               ></img>
             </div>
             <div className="social-tab">
-              <img
-                className="social-media-logo"
-                src="src/assets/public/linkedin.svg"
-              ></img>
+              <img className="social-media-logo" src="/linkedin.svg"></img>
             </div>
             <div className="social-tab">
-              <img
-                className="social-media-logo"
-                src="src/assets/public/gmail.svg"
-              ></img>
+              <img className="social-media-logo" src="/gmail.svg"></img>
             </div>
             <div className="social-tab">
-              <img
-                className="social-media-logo"
-                src="src/assets/public/github-dark.svg"
-              ></img>
+              <img className="social-media-logo" src="/github-dark.svg"></img>
             </div>
           </div>
         </div>
