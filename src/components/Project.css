@@ -77,11 +77,12 @@ ul {
 
 .tab {
   border-radius: 10px;
+  box-sizing: border-box;
   background-color: #090b08;
   width: min-content;
   padding: 8px;
-  margin: 5px;
-  font-size: 0.7vw;
+  font-size: 0.8vw;
+  margin-right: 1%;
 }
 
 #seemore-button {

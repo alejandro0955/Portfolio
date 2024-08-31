@@ -43,7 +43,7 @@ function Jobs(props: Props) {
 
             <div className="tool-container">
               {props.tools.map((tool) => (
-                <div className="tab" id="job-tools">
+                <div className="tab-tool" id="job-tools">
                   {tool}
                 </div>
               ))}
@@ -51,13 +51,13 @@ function Jobs(props: Props) {
           </div>
         </div>
       </div>
-      <div className="job-spacer-space">
+      {/* <div className="job-spacer-space">
         <div className="job-spacer-left"></div>
         <div className="job-spacer-line">
           {props.last_job === true ? null : <div className="job-spacer"></div>}
         </div>
         <div className="job-spacer-right"></div>
-      </div>
+      </div> */}
     </>
   );
 }

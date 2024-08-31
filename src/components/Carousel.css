@@ -1,7 +1,6 @@
 .carousel-container {
   width: 70%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: 2vh;
 }
@@ -11,6 +10,7 @@
   background-color: #181818;
   justify-self: center;
   margin: 2.5%;
+  padding: 0.4vh;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -23,6 +23,11 @@
   background-color: #d9d9d9;
   border-radius: 20px;
   margin: 1vh 0.5vh;
+  transition: all 0.1s;
+}
+
+.project-dot:hover {
+  opacity: 0.6;
 }
 
 .arrows {

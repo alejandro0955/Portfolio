@@ -6,24 +6,25 @@
   margin: 10% 0%;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
 .social-media {
   text-align: left;
-  width: 42%;
+  width: 44%;
   background-color: #181818;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   font-size: 150%;
-  height: 42%;
-  padding: 2%;
-  margin: 2%;
+  height: 44%;
+  padding: 3%;
   box-sizing: border-box;
 }
 
 .social-tab-container {
   display: flex;
+  margin: auto;
   flex-direction: row;
 }
 
@@ -51,13 +52,12 @@
 .map-container {
   height: 100%;
   background-color: #181818;
-  width: 42%;
+  width: 44%;
   border-radius: 10px;
   font-size: 150%;
   text-align: left;
   /* overflow: hidden; */
-  padding: 2%;
-  margin: 2%;
+  padding: 3%;
   box-sizing: border-box;
 }
 
@@ -67,11 +67,10 @@
   background-color: #181818;
   border-radius: 10px;
   font-size: 150%;
-  height: 42%;
-  width: 42%;
+  height: 44%;
+  width: 44%;
   flex-direction: column;
-  padding: 2%;
-  margin: 2%;
+  padding: 3%;
   box-sizing: border-box;
 }
 .resume-button {
@@ -85,4 +84,21 @@
   font-weight: bolder;
   font-size: 70%;
   height: 40%;
+  transition: all 0.5s;
 }
+
+.resume-button:hover {
+  color: white;
+  background-color: #090b08;
+}
+
+/* :root {
+  --map-tiles-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg)
+    saturate(0.3) brightness(0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+  .map-tiles {
+    filter: var(--map-tiles-filter, none);
+  }
+} */

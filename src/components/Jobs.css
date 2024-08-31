@@ -3,31 +3,37 @@
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  height: 15vh;
+  flex-direction: row;
   width: 70%;
-  vertical-align: middle;
+  height: 30vh;
+  align-items: center;
 }
 
 .job-date {
   width: 20%;
   height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  /* margin: 5%; */
   font-size: 0.6vw;
+  /* margin: auto; */
+}
+
+.job-date > p {
+  display: flex;
 }
 
 .job-spacer-logo-container {
   width: 10%;
-  height: 15vh;
+  height: inherit;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .line-spacer {
-  height: 33.33%;
-  aspect-ratio: 1;
+  width: 10%;
+  flex: 1;
   margin: auto;
 }
 
@@ -39,7 +45,7 @@
 }
 
 .job-logo {
-  height: 33.3%;
+  width: 80%;
   aspect-ratio: 1;
   margin: auto;
   display: flex;
@@ -61,7 +67,8 @@
 }
 
 .job-information > p {
-  font-size: 100%;
+  font-size: 0.8vw;
+  margin: 0.1% 0% 1% 0%;
   width: 100%;
 }
 
@@ -79,10 +86,9 @@
 }
 
 .job-description > p {
-  font-size: 100%;
-  margin-top: 15px;
+  font-size: 0.8vw;
   width: 100%;
-  overflow: hidden;
+  margin: 1% 0% 1% 0%;
 }
 
 .tool-container {
@@ -90,14 +96,13 @@
   height: 10%;
 }
 
-#job-tools {
-  font-size: 1em;
-}
-
-.tab {
-  margin: 0px 10px 0px 0px;
-  height: fit-content;
-  width: fit-content;
+.tab-tool {
+  border-radius: 10px;
+  background-color: #090b08;
+  width: min-content;
+  padding: 8px;
+  margin: 2% 2% 1% 0%;
+  font-size: 0.8vw;
 }
 
 .job-spacer-space {
@@ -121,12 +126,13 @@
 }
 
 #ws {
-  width: 67%;
-  height: 97%;
+  width: 65%;
+  height: fit-content;
   background-color: #181818;
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 3%;
+  justify-content: space-between;
+  padding: 2%;
 }

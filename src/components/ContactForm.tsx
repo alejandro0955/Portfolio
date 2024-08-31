@@ -9,7 +9,7 @@ function ContactForm() {
         <div className="map-container">
           <h3>Find me at</h3>
           <MapContainer
-            center={[25.793449, -80.139198]}
+            center={[25.761681, -80.191788]}
             zoom={13}
             scrollWheelZoom={false}
             style={{ height: "88%", borderRadius: "15px" }}
@@ -17,9 +17,10 @@ function ContactForm() {
             attributionControl={false}
           >
             <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='<a href="https://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.png?access-token={accessToken}"
               detectRetina={true}
+              accessToken="2PBJFDocqp0lVQozpP1FPY688hUv65wjP15jjW6bmu5MwCXWqlLVmfWNMHS9G1N1"
             />
           </MapContainer>
         </div>

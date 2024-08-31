@@ -11,7 +11,7 @@ function Project(props: Props) {
     <>
       <div className="project">
         <div className="proj-div-header">
-          <button id="seemore-button">See More</button>
+          {/* <button id="seemore-button">See More</button> */}
         </div>
         <div className="proj-spacer"></div>
         {/* <div className="separator"></div> */}

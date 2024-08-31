@@ -110,13 +110,13 @@ input {
   z-index: inherit;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   #blackhole {
     width: 100%;
     height: auto;
     padding-top: 50%;
   }
-}
+} */
 
 .name {
   width: 50%;
