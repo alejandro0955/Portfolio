@@ -30,6 +30,10 @@
   opacity: 0.6;
 }
 
+.arrow-container {
+  margin-left: -5%;
+}
+
 .arrows {
   height: 2vh;
   display: flex;

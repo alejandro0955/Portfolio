@@ -8,3 +8,7 @@
     filter: var(--map-tiles-filter, none);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

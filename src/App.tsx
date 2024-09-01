@@ -13,16 +13,16 @@ function App() {
       <nav className="navbar">
         <ul>
           <li className="menuItem">
-            <a>Expertise</a>
+            <a href="#expertise">Expertise</a>
           </li>
           <li className="menuItem">
-            <a>Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li className="menuItem">
-            <a>Experience</a>
+            <a href="#experience">Experience</a>
           </li>
           <li className="menuItem">
-            <a>Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <a className="resume"></a>
@@ -34,14 +34,14 @@ function App() {
             <h1>Alejandro Salza</h1>
             <h3>Aspiring Software Engineer and Frontend Developer</h3>
           </div>
-          <a className="downButton">
+          <a href="#expertise" className="downButton">
             <img src="/Button.png"></img>
           </a>
         </div>
       </div>
       <div className="midContainer">
         <div className="sect">
-          <SectionHeader header="Expertise" />
+          <SectionHeader header="Expertise" id="expertise" />
           <CategorySlider
             options={["Stack", "Certifications"]}
             selected={true}
@@ -61,7 +61,7 @@ function App() {
           </div>
         </div>
         <div className="sect">
-          <SectionHeader header="Projects" />
+          <SectionHeader header="Projects" id="projects" />
 
           <Project
             project_name="Portfolio"
@@ -70,7 +70,7 @@ function App() {
           <Carousel projects={[1, 2, 3, 4, 5]} />
         </div>
         <div className="sect">
-          <SectionHeader header="Experience" />
+          <SectionHeader header="Experience" id="experience" />
           <CategorySlider options={["Jobs", "Awards"]} selected={false} />
           <Jobs
             name={"Software Testing Intern"}
@@ -96,7 +96,7 @@ function App() {
           />
         </div>
         <div className="sect">
-          <SectionHeader header="Want to get in touch?" />
+          <SectionHeader header="Want to get in touch?" id="contact" />
           <ContactForm />
         </div>
       </div>

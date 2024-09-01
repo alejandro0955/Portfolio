@@ -11,6 +11,10 @@ body {
   background-color: #090b08;
 }
 
+a {
+  all: unset;
+}
+
 .navbar {
   display: grid;
   position: absolute;
