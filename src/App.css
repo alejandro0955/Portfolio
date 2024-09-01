@@ -230,6 +230,7 @@ input {
   flex-wrap: wrap;
   width: 25vw;
   justify-content: center;
+  transition: all 0.5s;
 }
 
 @media (max-width: 930px) {

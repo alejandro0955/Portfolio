@@ -2,7 +2,7 @@ import "./CategorySlider.css";
 
 interface Props {
   options: string[];
-  selected: boolean;
+  onSelect: (item: string) => void;
 }
 
 function CategorySlider(props: Props) {
@@ -12,7 +12,10 @@ function CategorySlider(props: Props) {
         {props.options.map((option) => (
           <button
             className="category"
-            id={props.selected === true ? "selected" : ""}
+            // id={props.selected === true ? "selected" : ""}
+            onClick={() => {
+              props.onSelect(option);
+            }}
           >
             {option}
           </button>

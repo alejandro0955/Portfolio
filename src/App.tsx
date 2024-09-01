@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import Skill from "./components/Skill.tsx";
 import Project from "./components/Project.tsx";
 import SectionHeader from "./components/SectionHeader.tsx";
@@ -8,6 +9,19 @@ import ContactForm from "./components/ContactForm.tsx";
 import Carousel from "./components/Carousel.tsx";
 
 function App() {
+  const [isExpertiseToggle, setExpertiseToggle] = useState("Stack");
+  let stackLinks = [
+    "python.svg",
+    "react.svg",
+    "javascript.svg",
+    "typescript.svg",
+    "html5.svg",
+    "css.svg",
+    "git.svg",
+    "vscode.svg",
+    "github-dark.svg",
+  ];
+  let certLinks = ["powerpoint.svg", "excel.svg", "javascript.svg"];
   return (
     <>
       <nav className="navbar">
@@ -44,20 +58,15 @@ function App() {
           <SectionHeader header="Expertise" id="expertise" />
           <CategorySlider
             options={["Stack", "Certifications"]}
-            selected={true}
+            onSelect={setExpertiseToggle}
           />
           <div className="skillContainer">
-            <Skill url={"/python.svg"} />
-            <Skill url={"/react.svg"} />
-            <Skill url={"/javascript.svg"} />
-            <Skill url={"/html5.svg"} />
-            <Skill url={"/css.svg"} />
-            <Skill url={"/git.svg"} />
-            <Skill url={"/github-dark.svg"} />
-            <Skill url={"/vscode.svg"} />
-            {/* <Skill url={"src/assets/public/javascript.svg"} />
-            <Skill url={"src/assets/public/excel.svg"}></Skill>
-            <Skill url={"src/assets/public/powerpoint.svg"}></Skill> */}
+            {isExpertiseToggle === "Stack"
+              ? stackLinks.map((stack) => <Skill url={stack} />)
+              : null}
+            {isExpertiseToggle === "Certifications"
+              ? certLinks.map((stack) => <Skill url={stack} />)
+              : null}
           </div>
         </div>
         <div className="sect">
@@ -71,7 +80,10 @@ function App() {
         </div>
         <div className="sect">
           <SectionHeader header="Experience" id="experience" />
-          <CategorySlider options={["Jobs", "Awards"]} selected={false} />
+          <CategorySlider
+            options={["Jobs", "Awards"]}
+            onSelect={setExpertiseToggle}
+          />
           <Jobs
             name={"Software Testing Intern"}
             duration="June 2022 - Aug 2022"
