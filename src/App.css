@@ -20,7 +20,7 @@ body {
   height: 14vh;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 930px) {
   .navbar {
     visibility: hidden;
   }
@@ -36,7 +36,7 @@ body {
   text-align: center;
   list-style-type: none;
   margin: 0;
-  padding: 5px;
+  padding: 0.1%;
   margin: 20px;
   font-size: 0.8vw;
   justify-self: center;
@@ -46,7 +46,7 @@ body {
 
 .menuItem {
   display: inline;
-  padding: 15px;
+  padding: 0.8vw;
   border-radius: 40px;
 }
 
@@ -63,7 +63,7 @@ body {
   font-family: Poppins;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 930px) {
   .midContainer {
     width: 90%;
   }
@@ -110,11 +110,9 @@ input {
   z-index: inherit;
 }
 
-/* @media (max-width: 600px) {
+/* @media (max-width: 930px) {
   #blackhole {
-    width: 100%;
-    height: auto;
-    padding-top: 50%;
+    ove
   }
 } */
 
@@ -129,10 +127,10 @@ input {
   justify-content: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 930px) {
   .name {
     width: 100%;
-    padding-top: 50%;
+    padding-top: 20vh;
   }
 }
 
@@ -141,6 +139,7 @@ input {
   text-align: center;
   color: white;
   font-family: Poppins;
+  text-shadow: 4px 4px 29px rgba(0, 0, 0, 0.63);
 }
 
 .tt > h1 {
@@ -149,17 +148,34 @@ input {
 
 .tt > h3 {
   font-size: 1vw;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  opacity: 1;
+  animation: typing 2s steps(40, end);
+  /* animation-delay: 0.5s; */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 930px) {
   .tt > h3 {
     font-size: 2vw;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 930px) {
   .tt > h1 {
     font-size: 17vw;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
   }
 }
 
@@ -179,9 +195,9 @@ input {
   height: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 930px) {
   .downButton {
-    width: 10vw;
+    width: 5vw;
   }
 }
 
@@ -209,9 +225,10 @@ input {
   flex-direction: row;
   flex-wrap: wrap;
   width: 25vw;
+  justify-content: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 930px) {
   .skillContainer {
     width: 80vw;
   }

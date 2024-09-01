@@ -1,3 +1,8 @@
+.skillContainer {
+  display: flex;
+  align-items: center;
+}
+
 .circle {
   display: flex;
   height: 5vw;

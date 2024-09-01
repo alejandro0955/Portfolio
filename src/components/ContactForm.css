@@ -1,5 +1,5 @@
 .contact-section {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   height: 40vh;
@@ -11,7 +11,7 @@
 
 .social-media {
   text-align: left;
-  width: 44%;
+  width: 34%;
   background-color: #181818;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
 .map-container {
   height: 100%;
   background-color: #181818;
-  width: 44%;
+  width: 54%;
   border-radius: 10px;
   font-size: 150%;
   text-align: left;
@@ -68,7 +68,7 @@
   border-radius: 10px;
   font-size: 150%;
   height: 44%;
-  width: 44%;
+  width: 34%;
   flex-direction: column;
   padding: 3%;
   box-sizing: border-box;
@@ -102,3 +102,18 @@
     filter: var(--map-tiles-filter, none);
   }
 } */
+
+@media (max-width: 452px) {
+  .contact-section {
+    height: 20vh;
+  }
+  .resume-container {
+    font-size: 3vw;
+  }
+  .social-media {
+    font-size: 3vw;
+  }
+  .map-container {
+    font-size: 3vw;
+  }
+}

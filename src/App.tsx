@@ -42,7 +42,10 @@ function App() {
       <div className="midContainer">
         <div className="sect">
           <SectionHeader header="Expertise" />
-          <CategorySlider options={["Stack", "Certifications"]} />
+          <CategorySlider
+            options={["Stack", "Certifications"]}
+            selected={true}
+          />
           <div className="skillContainer">
             <Skill url={"/python.svg"} />
             <Skill url={"/react.svg"} />
@@ -68,7 +71,7 @@ function App() {
         </div>
         <div className="sect">
           <SectionHeader header="Experience" />
-          <CategorySlider options={["Jobs", "Awards"]} />
+          <CategorySlider options={["Jobs", "Awards"]} selected={false} />
           <Jobs
             name={"Software Testing Intern"}
             duration="June 2022 - Aug 2022"
