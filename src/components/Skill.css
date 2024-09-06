@@ -27,7 +27,11 @@
     rgba(23, 23, 23, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#212121",endColorstr="#171717",GradientType=1);
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
+  opacity: 0;
+  transform: translate(100%, 0%);
+  animation: fadeInLeft 1s;
+  animation-fill-mode: forwards;
 }
 
 @media (max-width: 600px) {
@@ -35,6 +39,17 @@
     width: 20vw;
     height: 20vw;
     border-radius: 20vw;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate(100%, 0%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%);
   }
 }
 

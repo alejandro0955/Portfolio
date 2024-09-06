@@ -7,15 +7,28 @@
   width: 70%;
   height: 30vh;
   align-items: center;
+  animation: fadeInLeft 0.5s;
+  transition: all 1s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate(100%, 0%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
 }
 
 .job-date {
   width: 20%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  font-size: 0.6vw;
+  font-size: 100%;
   /* margin: auto; */
 }
 
@@ -135,4 +148,16 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 2%;
+}
+
+@media (max-width: 930px) {
+  .job-information > h3 {
+    font-size: 3vw;
+  }
+  .job-information > p {
+    font-size: 1.5vw;
+  }
+  .job-description > p {
+    font-size: 1.5vw;
+  }
 }

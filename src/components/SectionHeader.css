@@ -6,6 +6,6 @@
 
 @media (max-width: 600px) {
   .section-header {
-    visibility: hidden;
+    font-size: 5vw;
   }
 }
