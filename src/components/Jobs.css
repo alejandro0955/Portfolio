@@ -26,9 +26,9 @@
   width: 20%;
   height: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  font-size: 100%;
+  font-size: 0.8vw;
   /* margin: auto; */
 }
 
