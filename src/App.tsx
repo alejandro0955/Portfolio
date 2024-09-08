@@ -31,7 +31,7 @@ function App() {
   let Company = ["Overtown Youth Center", "Jackson Memorial Hospital"];
   let Description = [
     "Tested an Artificial Intelligence Chat Bot that helps people with their mental health and recognized issues and errors within the program to later provide useful and concise feedback",
-    "Used relevant patient data to develop a python model able to predict the future cashflow of the hospital and used HTML & CSS to display the information produced by the Python Model.",
+    "Developed a python model able to predict the future cashflow of the hospital and used HTML & CSS to display the information produced by the Python Model.",
   ];
   let Tools = [[], ["Python", "SQL", "HTML", "CSS", "JavaScript"]];
   let Awards = [
@@ -107,28 +107,6 @@ function App() {
             options={["Jobs", "Awards"]}
             onSelect={setExperienceToggle}
           />
-          {/* <Jobs
-            name={"Software Testing Intern"}
-            duration="June 2022 - Aug 2022"
-            logo={"/job.png"}
-            company="Summer Youth Internship Program"
-            description={
-              "Extensively tested an AI platoform for mental health to find bugs and glitches."
-            }
-            tools={[]}
-            last_job={false}
-          />
-          <Jobs
-            name={"Data Science Intern"}
-            duration="June 2022 - Aug 2022"
-            logo={"/JHS.svg"}
-            company="Jackson Memorial Hospital"
-            description={
-              "Worked in a team to develop a ptyhon solution that allowed a hospital to calcuate the cash flow that came into the hospital"
-            }
-            tools={["Python", "Javascript", "HTML", "CSS", "SQL"]}
-            last_job={true}
-          /> */}
 
           {isExperienceToggle === "Jobs"
             ? Job.map((Job, i) => (

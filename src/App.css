@@ -8,6 +8,13 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  /* background: rgb(9, 11, 8);
+  background: linear-gradient(
+    270deg,
+    rgba(9, 11, 8, 1) 0%,
+    rgba(24, 24, 24, 1) 50%,
+    rgba(9, 11, 8, 1) 100%
+  ); */
   background-color: #090b08;
 }
 
@@ -103,6 +110,7 @@ input {
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 #blackhole {
@@ -110,6 +118,7 @@ input {
   left: 0;
   top: 0;
   width: 100%;
+  /* scale: 1.5; */
   height: 110vh;
   z-index: inherit;
 }
@@ -148,6 +157,9 @@ input {
 
 .tt > h1 {
   font-size: 10vw;
+  transform: translate(0%, 100%);
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
 }
 
 .tt > h3 {
@@ -180,6 +192,17 @@ input {
   to {
     width: 100%;
     opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(0%, 100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, 0%);
   }
 }
 

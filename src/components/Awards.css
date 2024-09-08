@@ -64,3 +64,9 @@
   border-radius: 10px;
   flex: 1;
 }
+
+@media (max-width: 930px) {
+  .award-container {
+    font-size: 1vh;
+  }
+}

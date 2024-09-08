@@ -53,3 +53,9 @@
   height: auto;
   margin: auto;
 }
+
+@media (max-width: 930px) {
+  .arrow-container {
+    visibility: hidden;
+  }
+}

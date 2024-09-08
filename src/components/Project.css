@@ -20,7 +20,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000001",endColorstr="#090b08",GradientType=1);
   width: 70%;
   height: 40vh;
-  border-radius: 30px;
+  border-radius: 1.5vw;
   background-size: cover;
 }
 
@@ -83,6 +83,20 @@ ul {
   padding: 8px;
   font-size: 0.8vw;
   margin-right: 1%;
+}
+
+@media (max-width: 930px) {
+  .tab {
+    font-size: 0.8vh;
+    padding: 4px;
+    border-radius: 0.5vh;
+  }
+  .project {
+    border-radius: 1.5vh;
+  }
+  .proj-description > h3 {
+    font-size: 1.5vh;
+  }
 }
 
 #seemore-button {

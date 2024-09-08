@@ -32,6 +32,7 @@
   transform: translate(100%, 0%);
   animation: fadeInLeft 1s;
   animation-fill-mode: forwards;
+  transition: all 0.5s;
 }
 
 @media (max-width: 600px) {
