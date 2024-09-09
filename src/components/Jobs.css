@@ -27,10 +27,10 @@
 }
 
 .job-date {
-  width: 20%;
+  width: 15%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   font-size: 0.8vw;
   /* margin: auto; */
@@ -46,6 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 0% 2.5%;
 }
 
 .line-spacer {
@@ -152,6 +153,9 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 2%;
+  /* border-color: white;
+  border-width: 1px;
+  border-style: dashed; */
 }
 
 @media (max-width: 930px) {
