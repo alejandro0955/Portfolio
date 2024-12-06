@@ -52,9 +52,9 @@ function App() {
           <li className="menuItem">
             <a href="#expertise">Expertise</a>
           </li>
-          <li className="menuItem">
+          {/* <li className="menuItem">
             <a href="#projects">Projects</a>
-          </li>
+          </li> */}
           <li className="menuItem">
             <a href="#experience">Experience</a>
           </li>
@@ -92,7 +92,7 @@ function App() {
               : null}
           </div>
         </div>
-        <div className="sect">
+        {/* <div className="sect">
           <SectionHeader header="Projects" id="projects" />
 
           <Project
@@ -100,7 +100,7 @@ function App() {
             project_stack={["React", "HTML", "CSS", "TypeScript"]}
           />
           <Carousel projects={[1, 2, 3, 4, 5]} />
-        </div>
+        </div> */}
         <div className="sect">
           <SectionHeader header="Experience" id="experience" />
           <CategorySlider
